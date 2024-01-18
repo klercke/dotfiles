@@ -12,10 +12,14 @@ dotfiles:
   f_zshrc:
     src: zshrc
     dst: ~/.zshrc
+  f_gitconfig:
+    src: gitconfig
+    dst: ~/.gitconfig
 profiles:
   base:
     dotfiles:
     - f_zshrc
+    - f_gitconfig
   thor-endeavour:
-    dotfiles:
-    - f_zshrc
+    include:
+    - base

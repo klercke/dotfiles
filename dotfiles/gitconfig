@@ -1,0 +1,8 @@
+[user]
+	email = klercke@protonmail.com
+	name = Konnor Klercke
+	signingkey = F6EEB82715530210
+[core]
+	editor = nvim
+[commit]
+	gpgsign = true
