@@ -7,6 +7,7 @@ config:
   link_dotfile_default: nolink
   link_on_import: nolink
   longkey: false
+  showdiff: true
 dotfiles:
   f_zshrc:
     src: zshrc
