@@ -12,6 +12,6 @@ dotfiles:
     src: zshrc
     dst: ~/.zshrc
 profiles:
-  Brite-PF3VB0KC:
+  base:
     dotfiles:
     - f_zshrc
