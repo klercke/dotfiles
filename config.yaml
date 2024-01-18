@@ -15,3 +15,6 @@ profiles:
   base:
     dotfiles:
     - f_zshrc
+  thor-endeavour:
+    dotfiles:
+    - f_zshrc

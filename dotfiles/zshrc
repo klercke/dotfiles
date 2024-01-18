@@ -113,3 +113,4 @@ alias tfm='terraform fmt -recursive'
 
 alias vim='nvim'
 
+alias ls='ls -lah --color=auto'
