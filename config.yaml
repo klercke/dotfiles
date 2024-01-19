@@ -15,6 +15,9 @@ dotfiles:
   f_gitconfig:
     src: gitconfig
     dst: ~/.gitconfig
+  f_config:
+    src: config/i3/config
+    dst: ~/.config/i3/config
 profiles:
   base:
     dotfiles:
@@ -23,3 +26,5 @@ profiles:
   thor-endeavour:
     include:
     - base
+    dotfiles:
+    - f_config
