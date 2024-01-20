@@ -21,6 +21,9 @@ dotfiles:
   f_picom.conf:
     src: config/picom/picom.conf
     dst: ~/.config/picom/picom.conf
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
 profiles:
   base:
     dotfiles:
@@ -32,3 +35,4 @@ profiles:
     dotfiles:
     - f_config
     - f_picom.conf
+    - d_rofi
