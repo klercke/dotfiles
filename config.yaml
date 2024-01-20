@@ -24,6 +24,9 @@ dotfiles:
   d_rofi:
     src: config/rofi
     dst: ~/.config/rofi
+  d_kitty:
+    src: config/kitty
+    dst: ~/.config/kitty
 profiles:
   base:
     dotfiles:
@@ -36,3 +39,4 @@ profiles:
     - f_config
     - f_picom.conf
     - d_rofi
+    - d_kitty
