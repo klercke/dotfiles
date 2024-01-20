@@ -18,6 +18,9 @@ dotfiles:
   f_config:
     src: config/i3/config
     dst: ~/.config/i3/config
+  f_picom.conf:
+    src: config/picom/picom.conf
+    dst: ~/.config/picom/picom.conf
 profiles:
   base:
     dotfiles:
@@ -28,3 +31,4 @@ profiles:
     - base
     dotfiles:
     - f_config
+    - f_picom.conf
