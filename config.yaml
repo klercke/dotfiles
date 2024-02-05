@@ -40,3 +40,6 @@ profiles:
     - f_picom.conf
     - d_rofi
     - d_kitty
+  Brite-PF3VB0KC:
+    include:
+      - base
