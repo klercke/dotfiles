@@ -8,3 +8,5 @@
 	gpgsign = false
 [init]
 	defaultBranch = main
+[push]
+	autoSetupRemote = true
