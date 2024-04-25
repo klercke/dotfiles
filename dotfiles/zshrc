@@ -114,11 +114,11 @@ GPG_TTY=$(tty)
 export GPG_TTY
 
 # Aliases
-alias tf='terraform'
-alias tfp='terraform plan'
-alias tfv='terraform validate'
-alias tfi='terraform init'
-alias tfm='terraform fmt -recursive'
+alias tf='tofu'
+alias tfp='tofu plan'
+alias tfv='tofu validate'
+alias tfi='tofu init'
+alias tfm='tofu fmt -recursive'
 
 alias vim='nvim'
 
@@ -132,3 +132,6 @@ alias dotsync="dotgit pull && dotgit add -A && dotgit commit && dotgit push; dot
 eval "$(zoxide init zsh --cmd cd)"
 
 
+
+# Created by `pipx` on 2024-03-26 19:28:14
+export PATH="$PATH:/home/kklercke/.local/bin"
