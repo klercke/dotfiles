@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Environment
 export SUDO_EDITOR=nvim
+export EDITOR=nvim
 
 # Starship.rs
 eval "$(starship init zsh)"
@@ -130,8 +131,6 @@ alias dotsync="dotgit pull && dotgit add -A && dotgit commit && dotgit push; dot
 
 # Zoxide
 eval "$(zoxide init zsh --cmd cd)"
-
-
 
 # Created by `pipx` on 2024-03-26 19:28:14
 export PATH="$PATH:/home/kklercke/.local/bin"
