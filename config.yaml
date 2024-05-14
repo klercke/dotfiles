@@ -43,3 +43,8 @@ profiles:
   Brite-PF3VB0KC:
     include:
       - base
+  odin:
+    include:
+    - base
+    dotfiles:
+    - f_config
