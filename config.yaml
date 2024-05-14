@@ -27,6 +27,9 @@ dotfiles:
   d_kitty:
     src: config/kitty
     dst: ~/.config/kitty
+  f_condarc:
+    src: condarc
+    dst: ~/.condarc
 profiles:
   base:
     dotfiles:
@@ -42,9 +45,10 @@ profiles:
     - d_kitty
   Brite-PF3VB0KC:
     include:
-      - base
+    - base
   odin:
     include:
     - base
     dotfiles:
     - f_config
+    - f_condarc
