@@ -135,8 +135,16 @@ eval "$(zoxide init zsh --cmd cd)"
 # Created by `pipx` on 2024-03-26 19:28:14
 export PATH="$PATH:/home/kklercke/.local/bin"
 
-# Check if conda.sh exists and source it if it does
-if [ -f "${HOME}/conda/etc/profile.d/conda.sh" ]; then
-    source "${HOME}/conda/etc/profile.d/conda.sh"
+# Set up conda, but do not activate base
+__conda_setup="$('/home/d0c/miniforge3/bin/conda' 'shell.bash' 'hook' --no-auto-activate-base 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/d0c/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/home/d0c/miniforge3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/d0c/miniforge3/bin:$PATH"
+    fi
 fi
+unset __conda_setup
 
