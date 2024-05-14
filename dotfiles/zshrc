@@ -134,3 +134,9 @@ eval "$(zoxide init zsh --cmd cd)"
 
 # Created by `pipx` on 2024-03-26 19:28:14
 export PATH="$PATH:/home/kklercke/.local/bin"
+
+# Check if conda.sh exists and source it if it does
+if [ -f "${HOME}/conda/etc/profile.d/conda.sh" ]; then
+    source "${HOME}/conda/etc/profile.d/conda.sh"
+fi
+
