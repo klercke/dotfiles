@@ -52,3 +52,4 @@ profiles:
     dotfiles:
     - f_config
     - f_condarc
+    - d_kitty
