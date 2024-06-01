@@ -30,6 +30,13 @@ dotfiles:
   f_condarc:
     src: condarc
     dst: ~/.condarc
+  f_list-orphans.hook:
+    src: usr/share/libalpm/hooks/list-orphans.hook
+    dst: /usr/share/libalpm/hooks/list-orphans.hook
+  f_list-orphans.sh:
+    src: usr/share/libalpm/scripts/list-orphans.sh
+    dst: /usr/share/libalpm/scripts/list-orphans.sh
+    chmod: '755'
 profiles:
   base:
     dotfiles:
@@ -43,6 +50,8 @@ profiles:
     - f_picom.conf
     - d_rofi
     - d_kitty
+    - f_list-orphans.hook
+    - f_list-orphans.sh
   Brite-PF3VB0KC:
     include:
     - base
