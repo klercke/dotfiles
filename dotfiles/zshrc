@@ -150,3 +150,6 @@ unset __conda_setup
 
 # Nix setup
 export PATH="$PATH:~/.nix-profile/bin"
+
+# Encourage make to always use all CPU cores
+export MAKEFLAGS="--jobs=$(nproc)"
