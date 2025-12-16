@@ -12,6 +12,7 @@ nvim = "~/.config/nvim/"
 walker = "~/.config/walker/"
 ".gitconfig" = "~/.gitconfig"
 ".zshrc" = "~/.zshrc"
+"lazygit.yml" = "~/.config/lazygit/config.yml"
 
 [default.variables]
 

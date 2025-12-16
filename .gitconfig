@@ -3,10 +3,18 @@
 	name = Konnor Klercke
 	signingkey = 249DF839A80D37DD
 [core]
-	editor = nvim
+  editor = nvim
+  pager = delta
 [commit]
 	gpgsign = true
 [init]
 	defaultBranch = main
 [push]
 	autoSetupRemote = true
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+  side-by-side = true
+[merge]
+  conflictStyle = zdiff3
