@@ -3,7 +3,7 @@
 	name = Konnor Klercke
 	signingkey = 249DF839A80D37DD
 [core]
-  editor = nvim
+  editor = {{editor}}
   pager = delta
 [commit]
 	gpgsign = true

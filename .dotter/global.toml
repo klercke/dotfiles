@@ -15,6 +15,7 @@ walker = "~/.config/walker/"
 "lazygit.yml" = "~/.config/lazygit/config.yml"
 
 [default.variables]
+editor = "nvim"
 
 [settings]
 default_target_type = "automatic"

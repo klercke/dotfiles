@@ -22,8 +22,8 @@ alias lg='lazygit'
 alias ls='eza -lah --color=auto --icons'
 
 # Environment config
-export EDITOR=nvim
-export SUDO_EDITOR=nvim
+export EDITOR={{editor}}
+export SUDO_EDITOR={{editor}}
 
 # Use zoxide as a cd replacement
 eval "$(zoxide init zsh --cmd cd)"
