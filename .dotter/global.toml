@@ -1,0 +1,18 @@
+[helpers]
+
+[default]
+depends = []
+
+[default.files]
+"btop.conf" = "~/.config/btop/btop.conf"
+ghostty = "~/.config/ghostty/config"
+"gpg-agent.conf" = "~/.gnupg/gpg-agent.conf"
+"hyprland.conf" = "~/.config/hypr/hyprland.conf"
+nvim = "~/.config/nvim/"
+walker = "~/.config/walker/"
+".gitconfig" = "~/.gitconfig"
+
+[default.variables]
+
+[settings]
+default_target_type = "automatic"

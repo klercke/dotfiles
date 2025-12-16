@@ -5,7 +5,7 @@
 [core]
 	editor = nvim
 [commit]
-	gpgsign = false
+	gpgsign = true
 [init]
 	defaultBranch = main
 [push]
