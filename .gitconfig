@@ -1,7 +1,7 @@
 [user]
 	email = klercke@protonmail.com
 	name = Konnor Klercke
-	signingkey = F6EEB82715530210
+	signingkey = 249DF839A80D37DD
 [core]
 	editor = nvim
 [commit]
