@@ -11,11 +11,16 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Use GPG for SSH auth
 export GPG_TTY=$(tty)
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 gpg-connect-agent updatestartuptty /bye > /dev/null
 
+# Use zoxide as a cd replacement
+eval "$(zoxide init zsh --cmd cd)"
+
+# Make fastfetch show up in new terminals for maximum rice (but only if it's installed)
 command -v fastfetch >/dev/null && fastfetch
 
 # Starship prompt (keep this at the end)
