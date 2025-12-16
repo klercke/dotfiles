@@ -17,6 +17,9 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 gpg-connect-agent updatestartuptty /bye > /dev/null
 
+# Aliases
+alias lg='lazygit'
+
 # Use zoxide as a cd replacement
 eval "$(zoxide init zsh --cmd cd)"
 
