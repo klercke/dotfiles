@@ -19,6 +19,11 @@ gpg-connect-agent updatestartuptty /bye > /dev/null
 
 # Aliases
 alias lg='lazygit'
+alias ls='eza -lah --color=auto --icons'
+
+# Environment config
+export EDITOR=nvim
+export SUDO_EDITOR=nvim
 
 # Use zoxide as a cd replacement
 eval "$(zoxide init zsh --cmd cd)"
