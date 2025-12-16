@@ -13,6 +13,7 @@ walker = "~/.config/walker/"
 ".gitconfig" = "~/.gitconfig"
 ".zshrc" = "~/.zshrc"
 "lazygit.yml" = "~/.config/lazygit/config.yml"
+"ly.ini" = "/etc/ly/config.ini"
 
 [default.variables]
 editor = "nvim"
