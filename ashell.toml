@@ -1,0 +1,36 @@
+[appearance]
+primary_color = "#8ec07c"
+success_color = "#b8bb26"
+text_color = "#ebdbb2"
+workspace_colors = [ "#928374", "#458588" ]
+
+[appearance.danger_color]
+base = "#fb4934"
+weak = "#fe8019"
+
+[appearance.background_color]
+base = "#282828"
+weak = "#1d2021"
+strong = "#3c3836"
+
+[appearance.secondary_color]
+base = "#665c54"
+
+[modules]
+left = [ "Workspaces", "WindowTitle" ]
+center = [ "Settings", "Updates" ]
+right = [ "SystemInfo", "Clock" ]
+
+[updates]
+check_cmd = "yay -Qua"
+update_cmd = 'ghostty -e bash -c "yay -Syu; echo Done - Press enter to exit; read" &'
+
+[system_info]
+indicators = ["Cpu", "Memory", {Disk = "/"}, "DownloadSpeed", "UploadSpeed"]
+
+[settings]
+lock_cmd = "hyprlock"
+audio_sinks_more_cmd = "pavucontrol -t 3"
+audio_sources_more_cmd = "pavucontrol -t 4"
+vpn_more_cmd = "nm-connection-editor"
+remove_airplane_btn = true

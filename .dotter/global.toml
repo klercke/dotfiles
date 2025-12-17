@@ -17,6 +17,7 @@ walker = "~/.config/walker/"
 "hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"
 "wallpaper.png" = { target = "~/wallpaper.png", type = "symbolic" }
 "hyprlock.conf" = "~/.config/hypr/hyprlock.conf"
+"ashell.toml" = "~/.config/ashell/config.toml"
 
 [default.variables]
 editor = "nvim"
