@@ -14,6 +14,8 @@ walker = "~/.config/walker/"
 ".zshrc" = "~/.zshrc"
 "lazygit.yml" = "~/.config/lazygit/config.yml"
 "ly.ini" = "/etc/ly/config.ini"
+"hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"
+"wallpaper.png" = { target = "~/wallpaper.png", type = "symbolic" }
 
 [default.variables]
 editor = "nvim"
