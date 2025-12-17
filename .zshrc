@@ -1,16 +1,3 @@
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '~/.zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-
 # Set up zinit
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 if [ ! -d "$ZINIT_HOME" ]; then
@@ -23,6 +10,35 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
+# Load completions
+autoload -U compinit && compinit
+zinit cdreplay -q
+
+# Completion Settings
+zstyle :compinstall filename '~/.zshrc'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' menu no
+
+# Keybinds
+bindkey -v # Vim mode
+export KEYTIMEOUT=1
+bindkey '^j' history-search-forward
+bindkey '^k' history-search-backward
+
+# History
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
 
 # Use GPG for SSH auth
 export GPG_TTY=$(tty)
@@ -33,6 +49,10 @@ gpg-connect-agent updatestartuptty /bye > /dev/null
 # Aliases
 alias lg='lazygit'
 alias ls='eza -lah --color=auto --icons'
+
+# Shell integrations
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --color --icons $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --color --icons $realpath'
 
 # Environment config
 export EDITOR={{editor}}
