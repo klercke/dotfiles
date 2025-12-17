@@ -16,6 +16,7 @@ walker = "~/.config/walker/"
 "ly.ini" = "/etc/ly/config.ini"
 "hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"
 "wallpaper.png" = { target = "~/wallpaper.png", type = "symbolic" }
+"hyprlock.conf" = "~/.config/hypr/hyprlock.conf"
 
 [default.variables]
 editor = "nvim"
