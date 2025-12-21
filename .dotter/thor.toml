@@ -1,0 +1,4 @@
+includes = [".dotter/linux.toml"]
+
+packages = ["default", "hyprland", "nvim", "ly", "ghostty"]
+

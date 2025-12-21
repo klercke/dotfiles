@@ -1,0 +1,32 @@
+[default]
+depends = []
+
+[default.files]
+"btop.conf" = "~/.config/btop/btop.conf"
+"gpg-agent.conf" = "~/.gnupg/gpg-agent.conf"
+".zshrc" = "~/.zshrc"
+"lazygit.yml" = "~/.config/lazygit/config.yml"
+
+[hyprland]
+depends = []
+
+[hyprland.files]
+"hyprland.conf" = "~/.config/hypr/hyprland.conf"
+"hyprlock.conf" = "~/.config/hypr/hyprlock.conf"
+"hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"
+"wallpaper.png" = { target = "~/wallpaper.png", type = "symbolic" }
+"ashell.toml" = "~/.config/ashell/config.toml"
+walker = "~/.config/walker/"
+
+[ly]
+depends = []
+
+[ly.files]
+"ly.ini" = "/etc/ly/config.ini"
+
+[ghostty]
+depends = []
+
+[ghostty.files]
+ghostty = "~/.config/ghostty/config"
+
