@@ -1,12 +1,16 @@
 [user]
-	email = klercke@protonmail.com
-	name = Konnor Klercke
-	signingkey = 249DF839A80D37DD
+	email = {{git.email}}
+	name = {{git.name}}
+	signingkey = {{git.signingkey}}
 [core]
   editor = {{editor}}
   pager = delta
 [commit]
+  {{#if git.signingkey}}
 	gpgsign = true
+	{{else}}
+	gpgsign = false
+	{{/if}}
 [init]
 	defaultBranch = main
 [push]
