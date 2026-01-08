@@ -46,9 +46,24 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 gpg-connect-agent updatestartuptty /bye > /dev/null
 
-# Aliases
+# General aliases
 alias lg='lazygit'
 alias ls='eza -lah --color=auto --icons'
+
+# OpenTofu aliases
+alias tf='tofu' # All other aliases will use this so that the base OpenTofu command can be overridden
+alias tfa='tf apply'
+alias tff='tf fmt'
+alias tffr='tf fmt -recursive'
+alias tfi='tf init'
+alias tfp='tf plan'
+alias tfv='tf validate'
+alias tfo='tf output'
+alias tfs='tf state'
+alias tfsh='tf show'
+alias tfr='tf refresh'
+alias tft='tf test'
+alias tfws='tf workspace'
 
 # Shell integrations
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --color --icons $realpath'
