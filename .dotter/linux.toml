@@ -30,3 +30,8 @@ depends = []
 [ghostty.files]
 ghostty = "~/.config/ghostty/config"
 
+[zellij]
+depends = []
+
+[zellij.files]
+zellij = "~/.config/zellij"
