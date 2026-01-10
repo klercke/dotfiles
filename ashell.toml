@@ -2,7 +2,7 @@
 primary_color = "#8ec07c"
 success_color = "#b8bb26"
 text_color = "#ebdbb2"
-workspace_colors = [ "#928374", "#458588" ]
+workspace_colors = ["#928374", "#458588"]
 
 [appearance.danger_color]
 base = "#fb4934"
@@ -17,16 +17,16 @@ strong = "#3c3836"
 base = "#665c54"
 
 [modules]
-left = [ "Workspaces", "WindowTitle" ]
-center = [ "Settings", "Updates" ]
-right = [ "SystemInfo", "Clock" ]
+left = ["Workspaces", "WindowTitle"]
+center = ["Settings", "Updates"]
+right = ["SystemInfo", "Clock"]
 
 [updates]
-check_cmd = "yay -Qua"
-update_cmd = 'ghostty -e bash -c "yay -Syu; echo Done - Press enter to exit; read" &'
+check_cmd = "paru -Qua"
+update_cmd = 'ghostty -e bash -c "paru -Syu; echo Done - Press enter to exit; read" &'
 
 [system_info]
-indicators = ["Cpu", "Memory", {Disk = "/"}, "DownloadSpeed", "UploadSpeed"]
+indicators = ["Cpu", "Memory", { Disk = "/" }, "DownloadSpeed", "UploadSpeed"]
 
 [settings]
 lock_cmd = "hyprlock"
