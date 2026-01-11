@@ -50,6 +50,7 @@ gpg-connect-agent updatestartuptty /bye > /dev/null
 alias lg='lazygit'
 alias ls='eza -lah --color=auto --icons'
 alias cat=bat
+alias find=fd
 
 # OpenTofu aliases
 alias tf='tofu' # All other aliases will use this so that the base OpenTofu command can be overridden
