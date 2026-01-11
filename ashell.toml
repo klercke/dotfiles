@@ -22,7 +22,7 @@ center = ["Settings", "Updates"]
 right = ["SystemInfo", "Clock"]
 
 [updates]
-check_cmd = "paru -Qua"
+check_cmd = "paru -Qu"
 update_cmd = 'ghostty -e bash -c "paru -Syu; echo Done - Press enter to exit; read" &'
 
 [system_info]
