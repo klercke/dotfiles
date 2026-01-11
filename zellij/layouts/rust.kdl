@@ -1,8 +1,8 @@
 layout {
   pane split_direction="vertical" {
-    pane edit="src/main.rs"
+    pane edit="src"
     pane split_direction="horizontal" {
-      cargo { args "check"; }
+      bacon { args "clippy"; }
       cargo { args "run"; }
       cargo { args "test"; }
     }
@@ -12,6 +12,10 @@ layout {
   }
   pane_template name="cargo" {
     command "cargo"
+    start_suspended true
+  }
+  pane_template name="bacon" {
+    command "bacon"
     start_suspended true
   }
 }
