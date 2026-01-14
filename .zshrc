@@ -87,3 +87,10 @@ eval "$(starship init zsh)"
 # Put /usr/local/bin/ at start of path
 # This is done so that uutils-coretils (which are symlinked there) are used over gnu coreutils
 export PATH=/usr/local/bin:$PATH
+
+# -- Machine Specific Config from Dotter --
+{{#if machine_specific_zshrc_suffix}}
+{{machine_specific_zshrc_suffix}}
+{{else}}
+{{/if}}
+# -- End Machine Specific Config --
