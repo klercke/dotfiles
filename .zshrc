@@ -81,9 +81,12 @@ eval "$(zoxide init zsh --cmd cd)"
 # Make fastfetch show up in new terminals for maximum rice (but only if it's installed)
 command -v fastfetch >/dev/null && fastfetch
 
-# Starship prompt (keep this at the end)
-eval "$(starship init zsh)"
-
 # Put /usr/local/bin/ at start of path
 # This is done so that uutils-coretils (which are symlinked there) are used over gnu coreutils
 export PATH=/usr/local/bin:$PATH
+
+# Set up direnv
+eval "$(direnv hook zsh)"
+
+# Starship prompt (keep this at the end)
+eval "$(starship init zsh)"

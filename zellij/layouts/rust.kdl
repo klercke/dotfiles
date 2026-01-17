@@ -1,6 +1,6 @@
 layout {
   pane split_direction="vertical" {
-    pane edit="src"
+    pane edit="src" size="66%"
     pane split_direction="horizontal" {
       bacon { args "clippy"; }
       cargo { args "run"; }
