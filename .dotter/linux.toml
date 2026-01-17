@@ -4,8 +4,8 @@ depends = []
 [default.files]
 "btop.conf" = "~/.config/btop/btop.conf"
 "gpg-agent.conf" = "~/.gnupg/gpg-agent.conf"
-".zshrc" = "~/.zshrc"
 "lazygit.yml" = "~/.config/lazygit/config.yml"
+"starship.toml" = "~/.config/starship.toml"
 
 [hyprland]
 depends = []
@@ -35,3 +35,12 @@ depends = []
 
 [zellij.files]
 zellij = "~/.config/zellij"
+
+[zsh]
+depends = []
+
+[zsh.files]
+".zshrc" = "~/.zshrc"
+
+[zsh.variables]
+machine_specific_zshrc_suffix = ""

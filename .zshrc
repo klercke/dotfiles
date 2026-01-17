@@ -90,3 +90,9 @@ eval "$(direnv hook zsh)"
 
 # Starship prompt (keep this at the end)
 eval "$(starship init zsh)"
+# -- Machine Specific Config from Dotter --
+{{#if machine_specific_zshrc_suffix}}
+{{machine_specific_zshrc_suffix}}
+{{else}}
+{{/if}}
+# -- End Machine Specific Config --
