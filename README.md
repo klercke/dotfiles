@@ -1,3 +1,10 @@
+# ARCHIVED
+
+I use NixOS and Home Manager on my machines now.
+See [here](https://github.com/klercke/nixcfg) for my updated configuration.
+
+---
+
 # My dotfiles
 
 I put my dotfiles here so that I can easily reference them and sync them between machines using [Dotter](https://github.com/SuperCuber/dotter).
